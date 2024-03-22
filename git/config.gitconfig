@@ -1,0 +1,19 @@
+[alias]
+	last = log -1 HEAD --stat
+	l = remote -v
+	b = branch -a
+	c = commit -m
+	s = status -sb
+	stat = status
+	aliases = config --get-regex ^alias
+
+[init]
+	defaultBranch = master
+
+[core]
+	autocrlf = false
+	filemode = false
+	sshCommand = ssh.exe
+
+[includeIf "gitdir:**/.config/**/.git"]
+  path = .github.gitconfig
