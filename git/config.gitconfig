@@ -16,4 +16,4 @@
 	sshCommand = ssh.exe
 
 [includeIf "gitdir:**/.config/**/.git"]
-  path = .github.gitconfig
+  path = github.gitconfig
