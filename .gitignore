@@ -6,3 +6,5 @@
 
 /tmux/**
 !/tmux/tmux.conf
+
+/**/*Zone.Identifier
