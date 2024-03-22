@@ -1,4 +1,5 @@
 [alias]
+	up = "fetch -p"
 	last = log -1 HEAD --stat
 	l = remote -v
 	b = branch -a
