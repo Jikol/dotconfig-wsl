@@ -1,6 +1,6 @@
-/fish/**
-!/fish/config.fish
-!/fish/functions/use-nala.fish
+/fish/completions/**
+/fish/conf.d/**
+/fish/fish_variables
 
 /omf/**
 
