@@ -1,3 +1,4 @@
+# Main settings section #
 [alias]
 	up = fetch -p
 	last = log -1 HEAD --stat
@@ -7,6 +8,7 @@
 	s = status -sb
 	stat = status
 	sub = submodule update --recursive --remote
+	conf = config --list --show-origin --show-scope
 	aliases = config --get-regex ^alias
 
 [init]
@@ -16,6 +18,12 @@
 	autocrlf = false
 	filemode = false
 	sshCommand = ssh.exe
+# ------------------- #
 
+# GPG Signing section #
+# ------------------- #
+
+# Include SSH creds section #
 [includeIf "gitdir:**/.config/**/.git"]
   path = github.gitconfig
+# ------------------------- #

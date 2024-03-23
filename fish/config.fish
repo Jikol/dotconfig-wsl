@@ -23,7 +23,7 @@ fish_add_path /home/linuxbrew/.linuxbrew/sbin
 fish_add_path /home/jikol/.local/bin
 
 # Environment Variables
-export GIT_CONFIG_GLOBAL="$HOME/.config/git/config.gitconfig"
+export GIT_CONFIG_GLOBAL="$HOME/.config/git/.gitconfig"
 export CONFIG_FISH="$HOME/.config/fish/config.fish"
 export CONFIG_TMUX="$HOME/.config/tmux/tmux.conf"
 export LS_COLORS="$(vivid generate ~/.config/vivid/cattpuccin-mocha.yml)"
