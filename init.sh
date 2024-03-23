@@ -21,7 +21,6 @@ NONINTERACTIVE=1 /bin/bash -c "$(/usr/bin/curl -fsSL https://raw.githubuserconte
 /bin/bash -c "$(/usr/bin/wget -q -O conda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)" && /bin/bash -c "/bin/sh ./conda.sh -bu ; rm -f ./conda.sh"
 /home/linuxbrew/.linuxbrew/bin/brew install fish
 /home/linuxbrew/.linuxbrew/bin/fish -c "$(/usr/bin/curl -fsSL https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install)"
-/home/linuxbrew/.linuxbrew/bin/fish -c "$(/usr/bin/curl -sL https://raw.githubusercontent.com/jorgebucaran/fisher/main/functions/fisher.fish) | source && fisher install jorgebucaran/fisher"
 
 # setup shells
 /bin/bash -c "/usr/bin/grep -qxF "/home/linuxbrew/.linuxbrew/bin/fish" /etc/shells || echo "/home/linuxbrew/.linuxbrew/bin/fish" | sudo /usr/bin/tee -a /etc/shells"
@@ -30,7 +29,6 @@ NONINTERACTIVE=1 /bin/bash -c "$(/usr/bin/curl -fsSL https://raw.githubuserconte
 # config reloads
 /home/jikol/miniconda3/bin/conda init fish
 /usr/bin/batcat cache --build
-/home/linuxbrew/.linuxbrew/bin/fish -c "zoxide init fish | source"
 /home/linuxbrew/.linuxbrew/bin/fish -c "source ~/.config/fish/config.fish"
 /bin/bash -c "tmux new-session -d"
 /bin/bash -c "tmux source ~/.config/tmux/tmux.conf"
