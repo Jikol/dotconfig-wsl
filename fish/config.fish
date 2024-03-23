@@ -27,7 +27,7 @@ fish_add_path /home/jikol/.local/bin
 export GIT_CONFIG_GLOBAL="$HOME/.config/git/config.gitconfig"
 export CONFIG_FISH="$HOME/.config/fish/config.fish"
 export CONFIG_TMUX="$HOME/.config/tmux/tmux.conf"
-export LS_COLORS="$(vivid generate snazzy)"
+export LS_COLORS="$(vivid generate ~/.config/vivid/cattpuccin-mocha.yml)"
 
 # Prompt Theme
 oh-my-posh init fish --config "/mnt/c/Users/Jikol/.config/prompt/fluent.json" | source
