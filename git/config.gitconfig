@@ -1,11 +1,12 @@
 [alias]
-	up = "fetch -p"
+	up = fetch -p
 	last = log -1 HEAD --stat
 	l = remote -v
 	b = branch -a
 	c = commit -m
 	s = status -sb
 	stat = status
+	sub = submodule update --recursive --remote
 	aliases = config --get-regex ^alias
 
 [init]

@@ -8,7 +8,6 @@ alias root="su root -L"
 alias cat="batcat"
 alias ssh="ssh.exe"
 alias tmuxrld="tmux source ~/.config/tmux/tmux.conf"
-alias gitconfig="git config --list --show-origin --show-scope"
 
 # Functions
 source ~/.config/fish/functions/use-nala.fish
