@@ -9,6 +9,7 @@
 /bin/bash -c "sudo /usr/bin/apt install -y bat"
 /bin/bash -c "sudo /usr/bin/apt install -y neofetch"
 /bin/bash -c "sudo /usr/bin/apt install -y tmux"
+/bin/bash -c "sudo /usr/bin/apt install -y nala"
 /bin/bash -c "sudo /usr/bin/apt install -y build-essential"
 /bin/bash -c "git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm"
 NONINTERACTIVE=1 /bin/bash -c "$(/usr/bin/curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
