@@ -34,5 +34,8 @@ NONINTERACTIVE=1 /bin/bash -c "$(/usr/bin/curl -fsSL https://raw.githubuserconte
 /bin/bash -c "tmux source ~/.config/tmux/tmux.conf"
 /bin/bash -c "tmux kill-server"
 
+# docker
+sudo usermod -aG docker $USER
+
 # message
 echo "Go to tmux with `tmux` command and press ctrl + space + I"
