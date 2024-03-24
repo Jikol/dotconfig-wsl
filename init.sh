@@ -20,6 +20,8 @@ NONINTERACTIVE=1 /bin/bash -c "$(/usr/bin/curl -fsSL https://raw.githubuserconte
 /bin/bash -c "$(/usr/bin/wget -q -O conda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)" && /bin/bash -c "/bin/sh ./conda.sh -bu ; rm -f ./conda.sh"
 /home/linuxbrew/.linuxbrew/bin/brew install fish
 /home/linuxbrew/.linuxbrew/bin/fish -c "$(/usr/bin/curl -fsSL https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install)"
+/home/linuxbrew/.linuxbrew/bin/brew install node
+/home/linuxbrew/.linuxbrew/bin/brew install corepack
 
 # setup shells
 /bin/bash -c "/usr/bin/grep -qxF "/home/linuxbrew/.linuxbrew/bin/fish" /etc/shells || echo "/home/linuxbrew/.linuxbrew/bin/fish" | sudo /usr/bin/tee -a /etc/shells"

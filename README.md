@@ -90,6 +90,16 @@ NONINTERACTIVE=1 /bin/bash -c "$(/usr/bin/curl -fsSL https://raw.githubuserconte
 /bin/bash -c "$(/usr/bin/wget -q -O conda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)" && /bin/bash -c "/bin/sh ./conda.sh -bu ; rm -f ./conda.sh"
 ```
 
+- [node](https://nodejs.org/en) (javascript runner)
+```
+/home/linuxbrew/.linuxbrew/bin/brew install node
+```
+
+- [coreapck](https://nodejs.org/api/corepack.html) (package managers tool)
+```
+/home/linuxbrew/.linuxbrew/bin/brew install corepack
+```
+
 ## Shell Setup
 
 ```
