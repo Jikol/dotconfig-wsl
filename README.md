@@ -97,7 +97,7 @@ NONINTERACTIVE=1 /bin/bash -c "$(/usr/bin/curl -fsSL https://raw.githubuserconte
 /bin/bash -c "sudo chsh -s /home/linuxbrew/.linuxbrew/bin/fish jikol"
 ```
 
-## Init configs
+## Init Configs
 
 - Fish config
 ```
