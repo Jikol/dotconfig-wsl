@@ -29,20 +29,23 @@ export CONFIG_TMUX="$HOME/.config/tmux/tmux.conf"
 export LS_COLORS="$(vivid generate ~/.config/vivid/cattpuccin-mocha.yml)"
 
 # Prompt Theme
-oh-my-posh init fish --config "/mnt/c/Users/Jikol/.config/prompt/fluent.json" | source
+oh-my-posh init fish --config "~/.config/omp/fluent.json" | source
+
+# Zoxide init
+zoxide init fish | source #! needs zoxide
 
 # Supress MOTD
 set fish_greeting
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-if test -f /home/jikol/miniconda3/bin/conda
-    eval /home/jikol/miniconda3/bin/conda "shell.fish" "hook" $argv | source
+if test -f ~/miniconda3/bin/conda
+    eval ~/miniconda3/bin/conda "shell.fish" "hook" $argv | source
 else
-    if test -f "/home/jikol/miniconda3/etc/fish/conf.d/conda.fish"
-        . "/home/jikol/miniconda3/etc/fish/conf.d/conda.fish"
+    if test -f "~/miniconda3/etc/fish/conf.d/conda.fish"
+        . "~/miniconda3/etc/fish/conf.d/conda.fish"
     else
-        set -x PATH "/home/jikol/miniconda3/bin" $PATH
+        set -x PATH "~/miniconda3/bin" $PATH
     end
 end
 # <<< conda initialize <<<
