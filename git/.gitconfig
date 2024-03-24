@@ -24,6 +24,12 @@
 # ------------------- #
 
 # Include SSH creds section #
+[includeIf "gitdir:**/Projects/school/**/.git"]
+  path = gitlabvsb.gitconfig
+
+[includeIf "gitdir:**/Projects/work/**/.git"]
+  path = gitea.gitconfig
+
 [includeIf "gitdir:**/.config/**/.git"]
   path = github.gitconfig
 # ------------------------- #
