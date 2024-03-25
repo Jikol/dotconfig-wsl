@@ -22,6 +22,7 @@ NONINTERACTIVE=1 /bin/bash -c "$(/usr/bin/curl -fsSL https://raw.githubuserconte
 /home/linuxbrew/.linuxbrew/bin/fish -c "$(/usr/bin/curl -fsSL https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install)"
 /home/linuxbrew/.linuxbrew/bin/brew install node
 /home/linuxbrew/.linuxbrew/bin/brew install corepack
+/home/linuxbrew/.linuxbrew/bin/brew install go-task
 
 # setup shells
 /bin/bash -c "/usr/bin/grep -qxF "/home/linuxbrew/.linuxbrew/bin/fish" /etc/shells || echo "/home/linuxbrew/.linuxbrew/bin/fish" | sudo /usr/bin/tee -a /etc/shells"

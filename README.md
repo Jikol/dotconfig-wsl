@@ -100,6 +100,11 @@ NONINTERACTIVE=1 /bin/bash -c "$(/usr/bin/curl -fsSL https://raw.githubuserconte
 /home/linuxbrew/.linuxbrew/bin/brew install corepack
 ```
 
+- [taskfile](https://taskfile.dev/installation/) (modern makefile in golang)
+```
+/home/linuxbrew/.linuxbrew/bin/brew install go-task
+```
+
 ## Shell Setup
 
 ```
