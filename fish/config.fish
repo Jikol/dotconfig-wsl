@@ -37,6 +37,9 @@ zoxide init fish | source #! needs zoxide
 # Supress MOTD
 set fish_greeting
 
+# Add myself to docker group
+sudo usermod -aG docker $USER
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 if test -f /home/jikol/miniconda3/bin/conda
