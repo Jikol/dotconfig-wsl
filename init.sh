@@ -19,7 +19,6 @@ NONINTERACTIVE=1 /bin/bash -c "$(/usr/bin/curl -fsSL https://raw.githubuserconte
 /bin/bash -c "$(/usr/bin/wget -q -O vivid.deb https://github.com/sharkdp/vivid/releases/download/v0.8.0/vivid_0.8.0_amd64.deb)" && /bin/bash -c "sudo dpkg -i ./vivid.deb ; rm -f ./vivid.deb"
 /bin/bash -c "$(/usr/bin/wget -q -O conda.sh https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh)" && /bin/bash -c "/bin/sh ./conda.sh -bu ; rm -f ./conda.sh"
 /home/linuxbrew/.linuxbrew/bin/brew install fish
-/home/linuxbrew/.linuxbrew/bin/fish -c "$(/usr/bin/curl -fsSL https://raw.githubusercontent.com/oh-my-fish/oh-my-fish/master/bin/install)"
 /home/linuxbrew/.linuxbrew/bin/brew install node
 /home/linuxbrew/.linuxbrew/bin/brew install corepack
 /home/linuxbrew/.linuxbrew/bin/brew install go-task
@@ -35,9 +34,6 @@ NONINTERACTIVE=1 /bin/bash -c "$(/usr/bin/curl -fsSL https://raw.githubuserconte
 /bin/bash -c "tmux new-session -d"
 /bin/bash -c "tmux source ~/.config/tmux/tmux.conf"
 /bin/bash -c "tmux kill-server"
-
-# docker
-sudo usermod -aG docker $USER
 
 # message
 echo "Go to tmux with 'mux' command and press ctrl + space + I"
