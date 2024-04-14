@@ -27,6 +27,7 @@ export GIT_CONFIG_GLOBAL="$HOME/.config/git/.gitconfig"
 export CONFIG_FISH="$HOME/.config/fish/config.fish"
 export CONFIG_TMUX="$HOME/.config/tmux/tmux.conf"
 export LS_COLORS="$(vivid generate ~/.config/vivid/cattpuccin-mocha.yml)"
+export XDG_CONFIG_HOME="$HOME/.config"
 
 # Prompt Theme
 oh-my-posh init fish --config "~/.config/omp/fluent.json" | source
