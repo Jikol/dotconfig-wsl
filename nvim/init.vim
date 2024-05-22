@@ -4,4 +4,5 @@ augroup RestoreCursorShapeOnExit
 augroup END
 
 set expandtab ts=4 sw=4 ai
+set clipboard=unnamedplus
 set mouse=a

@@ -1,12 +1,13 @@
 # Main settings section #
 [alias]
 	up = fetch -p
-	last = log -1 HEAD --stat
-	l = remote -v
+	last = log -1 HEAD --stat --graph
+	r = remote -v
 	b = branch -a
 	c = commit -m
 	s = status -sb
-	stat = status
+    stat = status
+    ll = log --oneline --decorate --graph
 	sub = submodule update --recursive --remote
 	conf = config --list --show-origin --show-scope
 	aliases = config --get-regex ^alias
