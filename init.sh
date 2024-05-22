@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# prepare
+sudo rm -rf ~/.cache
+sudo rm -rf ~/.local/share/fish
+sudo rm -rf ~/.local/share/nvim
+sudo rm -rf ~/.local/share/omf
+sudo rm -rf ~/.local/share/zoxide
+
 # installs
 /bin/bash -c "sudo /usr/bin/apt install -y curl"
 /bin/bash -c "sudo /usr/bin/apt install -y wget"
