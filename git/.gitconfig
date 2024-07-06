@@ -6,11 +6,12 @@
 	b = branch -a
 	c = commit -m
 	s = status -sb
-    stat = status
-    ll = log --oneline --decorate --graph
+  d = diff --staged
+  stat = status
+  ll = log --oneline --decorate --graph
 	sub = submodule update --recursive --remote
 	conf = config --list --show-origin --show-scope
-	aliases = config --get-regex ^alias
+  aliases = config --get-regex ^alias
 
 [init]
 	defaultBranch = master
@@ -19,6 +20,7 @@
 	autocrlf = false
 	filemode = false
 	sshCommand = ssh.exe
+	pager = diff-so-fancy | less --tabs=4 -RF
 # ------------------- #
 
 # GPG Signing section #
@@ -29,7 +31,7 @@
   path = gitlabvsb.gitconfig
 
 [includeIf "gitdir:**/Projects/work/**/.git"]
-  path = gitea.gitconfig
+  path = work.gitconfig
 
 [includeIf "gitdir:**/.config/**/.git"]
   path = github.gitconfig
