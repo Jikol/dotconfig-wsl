@@ -2,6 +2,7 @@
 /fish/conf.d/**
 /fish/fish_variables
 /fish/fish_plugins
+fish/functions/ssh-host-ls.fish
 /tmux/**
 !/tmux/tmux.conf
 /**/*Zone.Identifier
