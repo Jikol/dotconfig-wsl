@@ -27,7 +27,7 @@ curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 /bin/bash -c '
 /home/linuxbrew/.linuxbrew/bin/brew install \
     gcc jandedobbeleer/oh-my-posh/oh-my-posh zoxide \
-    btop fish node corepack go-task git-delta
+    git-delta btop fish node corepack go-task
 '
 
 # shellscript installs
