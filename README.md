@@ -45,6 +45,11 @@ sudo /bin/bash -c 'apt-get install -y tmux'
 sudo /bin/bash -c 'apt-get install -y nala'
 ```
 
+- [ffmpeg](https://ffmpeg.org/) (video & audio converter)
+```
+sudo /bin/bash -c 'apt-get install -y ffmpeg'
+```
+
 - [tpm](https://github.com/tmux-plugins/tpm) (tmux plugin manager)
 ```
 sudo /bin/bash -c "git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm"

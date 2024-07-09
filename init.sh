@@ -16,7 +16,7 @@ sudo /bin/bash -c '
 apt-get update && apt-get upgrade -y
 apt-get install -y \
     curl wget git neovim exa bat neofetch \
-    tmux nala build-essential
+    tmux nala ffmpeg build-essential
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 '
 
