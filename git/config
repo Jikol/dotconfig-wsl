@@ -1,3 +1,7 @@
+# Static includes #
+[include]
+	path = ~/.config/delta/catppuccin.gitconfig
+
 # Main settings section #
 [alias]
 	up = fetch -p
@@ -6,7 +10,7 @@
 	b = branch -a
 	c = commit -m
 	s = status -sb
-  d = diff --staged
+  d = diff
   stat = status
   ll = log --oneline --decorate --graph
 	sub = submodule update --recursive --remote
@@ -20,7 +24,18 @@
 	autocrlf = false
 	filemode = false
 	sshCommand = ssh.exe
-	pager = diff-so-fancy | less --tabs=4 -RF
+	pager = delta
+
+[delta]
+  features = catppuccin-mocha
+  side-by-side = true
+  navigate = true
+
+[merge]
+  conflictstyle = diff3
+
+[diff]
+  colorMoved = default
 # ------------------- #
 
 # GPG Signing section #

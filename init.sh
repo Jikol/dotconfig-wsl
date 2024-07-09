@@ -6,13 +6,17 @@ RESET='\033[0m'
 
 # prepare
 sudo /bin/bash -c '
-sudo rm -rf ~/.cache ~/.local/share/fish ~/.local/share/nvim ~/.local/share/omf ~/.local/share/zoxide
+sudo rm -rf \
+    ~/.cache ~/.local/share/fish ~/.local/share/nvim \
+    ~/.local/share/omf ~/.local/share/zoxide
 '
 
 # aptitude installs
 sudo /bin/bash -c '
 apt-get update && apt-get upgrade -y
-apt-get install -y curl wget git neovim exa bat neofetch tmux nala build-essential
+apt-get install -y \
+    curl wget git neovim exa bat neofetch \
+    tmux nala build-essential
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
 '
 
@@ -21,7 +25,9 @@ NONINTERACTIVE=1 /bin/bash -c "$(
 curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 )"
 /bin/bash -c '
-/home/linuxbrew/.linuxbrew/bin/brew install gcc jandedobbeleer/oh-my-posh/oh-my-posh zoxide btop fish node corepack go-task
+/home/linuxbrew/.linuxbrew/bin/brew install \
+    gcc jandedobbeleer/oh-my-posh/oh-my-posh zoxide \
+    btop fish node corepack go-task git-delta
 '
 
 # shellscript installs
