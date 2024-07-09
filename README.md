@@ -65,6 +65,11 @@ NONINTERACTIVE=1 /bin/bash -c "$(/usr/bin/curl -fsSL https://raw.githubuserconte
 /home/linuxbrew/.linuxbrew/bin/brew install zoxide
 ```
 
+- [git-delta](https://github.com/dandavison/delta) (git diff prettier)
+```
+/home/linuxbrew/.linuxbrew/bin/brew install git-delta
+```
+
 - [btop](https://github.com/aristocratos/btop?tab=readme-ov-file#installation) (better top replacement)
 ```
 /home/linuxbrew/.linuxbrew/bin/brew install btop
