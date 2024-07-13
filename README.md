@@ -105,6 +105,16 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 /bin/bash -c '/home/linuxbrew/.linuxbrew/bin/brew install go-task'
 ```
 
+- [pipx](https://github.com/pypa/pipx) (python isolated env program installer)
+```
+/bin/bash -c '/home/linuxbrew/.linuxbrew/bin/brew install pipx'
+```
+
+- [poetry](https://python-poetry.org) (python project tasker)
+```
+/bin/bash -c '/home/linuxbrew/.linuxbrew/bin/pipx install poetry'
+```
+
 - [vidid](https://github.com/sharkdp/vivid) (ls terminal colors)
 ```
 /bin/bash -c "$(wget -q -O vivid.deb https://github.com/sharkdp/vivid/releases/download/v0.8.0/vivid_0.8.0_amd64.deb)" && sudo /bin/bash -c 'dpkg -i ./vivid.deb ; rm -f ./vivid.deb'

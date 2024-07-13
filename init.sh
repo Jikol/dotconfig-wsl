@@ -27,7 +27,13 @@ curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 /bin/bash -c '
 /home/linuxbrew/.linuxbrew/bin/brew install \
     gcc jandedobbeleer/oh-my-posh/oh-my-posh zoxide \
-    git-delta btop fish node corepack go-task
+    git-delta btop fish node corepack go-task \
+    pipx
+'
+
+# pipx installs
+/bin/bash -c '
+/home/linuxbrew/.linuxbrew/bin/pipx install poetry
 '
 
 # shellscript installs
