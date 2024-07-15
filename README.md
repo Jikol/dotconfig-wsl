@@ -110,6 +110,11 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 /bin/bash -c '/home/linuxbrew/.linuxbrew/bin/brew install pipx'
 ```
 
+- [bun](https://bun.sh/) (javascript runtime)
+```
+/bin/bash -c '/home/linuxbrew/.linuxbrew/bin/brew install oven-sh/bun/bun'
+```
+
 - [poetry](https://python-poetry.org) (python project tasker)
 ```
 /bin/bash -c '/home/linuxbrew/.linuxbrew/bin/pipx install poetry'

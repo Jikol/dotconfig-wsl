@@ -28,7 +28,7 @@ curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 /home/linuxbrew/.linuxbrew/bin/brew install \
     gcc jandedobbeleer/oh-my-posh/oh-my-posh zoxide \
     git-delta btop fish node corepack go-task \
-    pipx
+    pipx oven-sh/bun/bun
 '
 
 # pipx installs
