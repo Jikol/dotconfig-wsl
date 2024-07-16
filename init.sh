@@ -34,6 +34,7 @@ curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh
 # pipx installs
 /bin/bash -c '
 /home/linuxbrew/.linuxbrew/bin/pipx install poetry
+/home/linuxbrew/.linuxbrew/bin/pipx install poethepoet
 '
 
 # shellscript installs

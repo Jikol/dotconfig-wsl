@@ -120,6 +120,12 @@ NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Ho
 /bin/bash -c '/home/linuxbrew/.linuxbrew/bin/pipx install poetry'
 ```
 
+- [poethepoet](https://poethepoet.natn.io/) (poetry task runner)
+```
+/bin/bash -c '/home/linuxbrew/.linuxbrew/bin/pipx install poethepoet'
+```
+
+
 - [vidid](https://github.com/sharkdp/vivid) (ls terminal colors)
 ```
 /bin/bash -c "$(wget -q -O vivid.deb https://github.com/sharkdp/vivid/releases/download/v0.8.0/vivid_0.8.0_amd64.deb)" && sudo /bin/bash -c 'dpkg -i ./vivid.deb ; rm -f ./vivid.deb'
