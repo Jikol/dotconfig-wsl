@@ -43,6 +43,7 @@ export CONFIG_VIM="$HOME/.config/nvim/init.vim"
 export CONFIG_GIT="$HOME/.config/git/.gitconfig"
 export LS_COLORS="$(vivid generate ~/.config/vivid/cattpuccin-mocha.yml)"
 export XDG_CONFIG_HOME="$HOME/.config"
+export DOCKER_CONFIG="$HOME/.config/docker"
 
 # Prompt Theme
 oh-my-posh init fish --config "~/.config/omp/fluent.json" | source
