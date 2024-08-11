@@ -13,8 +13,7 @@ sudo rm -rf \
 
 # aptitude installs
 sudo /bin/bash -c '
-apt-get update && apt-get upgrade -y
-apt-get install -y \
+apt-get update && apt-get install -y \
     curl wget git neovim exa bat neofetch \
     tmux nala ffmpeg build-essential
 git clone https://github.com/tmux-plugins/tpm ~/.config/tmux/plugins/tpm
@@ -62,6 +61,15 @@ grep -qxF "/home/linuxbrew/.linuxbrew/bin/fish" /etc/shells || echo "/home/linux
 '
 sudo /bin/bash -c '
 chsh -s /home/linuxbrew/.linuxbrew/bin/fish jikol
+'
+
+# update & upgrade installed utilities
+/bin/bash -c '
+/home/linuxbrew/.linuxbrew/bin/brew update
+/home/linuxbrew/.linuxbrew/bin/brew upgrade
+'
+sudo /bin/bash -c '
+apt-get upgrade -y
 '
 
 # config reloads & setups
