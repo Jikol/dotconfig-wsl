@@ -22,4 +22,3 @@ oh-my-posh init fish --config "$HOME/.config/omp/fluent.json" | source
 
 ## Initialialization ##
 zoxide init fish | source
-cls
