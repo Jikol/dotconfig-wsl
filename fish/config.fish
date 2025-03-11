@@ -9,6 +9,9 @@ alias fetch="fastfetch"
 alias subl="subl.exe"
 alias ip="ip addr"
 alias cat="batcat"
+alias ws="webstorm"
+alias pch="pycharm"
+alias subl="subl.exe"
 
 ## Variables ##
 set -g PROFILE "$HOME/.config/fish/config.fish"

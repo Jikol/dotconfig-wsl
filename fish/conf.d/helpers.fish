@@ -29,11 +29,16 @@ function ssh-wrapper
   end
 end
 
+function shell-reload
+  source $HOME/.config/fish/**/*.fish
+  clear
+end
+
 ## Aliases ##
+alias rld="shell-reload"
 alias sudo="sudo-wrapper"
 alias apt="apt-wrapper"
 alias ssh="ssh-wrapper"
 
-alias rld="omf reload"
 alias batrld="batcat cache --build"
 alias tmuxrld="tmux source $HOME/.config/tmux/tmux.conf"
