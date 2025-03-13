@@ -16,7 +16,7 @@ alias subl="subl.exe"
 ## Variables ##
 set -g PROFILE "$HOME/.config/fish/config.fish"
 set -g CONFIG_FISH "$HOME/.config/fish/config.fish"
-set -g CONFIG_VIM "$HOME/.config/nvim/init.vim"
+set -g CONFIG_VIM "$HOME/.config/nvim/init.lua"
 set -g CONFIG_GIT "$HOME/.config/git/config"
 set -g CONFIG_TMUX "$HOME/.config/tmux/tmux.conf"
 
